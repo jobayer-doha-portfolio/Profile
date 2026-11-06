@@ -50,16 +50,15 @@
     from { transform: translateX(0); }
     to { transform: translateX(-50%); }
   }
-  .brand-logo-chip { height: 36px; display: flex; align-items: center; flex: 0 0 auto; }
+  .brand-logo-chip { height: 56px; display: flex; align-items: center; flex: 0 0 auto; }
   .brand-logo-chip img {
     height: 100%;
     width: auto;
+    max-width: 160px;
     object-fit: contain;
-    filter: drop-shadow(0 1px 3px rgba(0,0,0,0.5));
-    opacity: 0.88;
-    transition: opacity 0.2s ease, transform 0.2s ease;
+    transition: transform 0.2s ease;
   }
-  .brand-logo-chip img:hover { opacity: 1; transform: scale(1.06); }
+  .brand-logo-chip img:hover { transform: scale(1.06); }
 
   @media (max-width: 860px) {
     .stats-strip { grid-template-columns: repeat(2, minmax(0, 1fr)); }
@@ -71,7 +70,7 @@
     .hero-row { flex-direction: column; align-items: center; text-align: center; }
     .timeline-item { grid-template-columns: 24px 1fr; }
     .timeline-date { display: none; }
-    .brand-logo-chip { height: 28px; }
+    .brand-logo-chip { height: 40px; }
     .brand-marquee-track { gap: 36px; }
   }
 </style>
@@ -132,46 +131,6 @@
       <div style="font-family: 'Space Grotesk', sans-serif; font-size: 36px; font-weight: 700; color: #FAF7F2;">Highlight</div>
     </div>
 
-    <!-- WORKED WITH -->
-    <div style="max-width: 1180px; margin: 0 auto; padding: 0 56px 18px;">
-      <div style="font-family: 'Space Grotesk', sans-serif; font-size: 20px; font-weight: 700; color: #FAF7F2;">Worked with</div>
-    </div>
-    <div class="brand-marquee-wrap">
-      <div class="brand-marquee-track">
-        <div class="brand-logo-chip"><img src="brands/01-stylesop.png" alt="Style Shop"></div>
-        <div class="brand-logo-chip"><img src="brands/02-ucc.png" alt="UCC"></div>
-        <div class="brand-logo-chip"><img src="brands/03-sopodon.png" alt="Sopodon Academic & Admission Program"></div>
-        <div class="brand-logo-chip"><img src="brands/04-mediinn.png" alt="Medi Inn"></div>
-        <div class="brand-logo-chip"><img src="brands/05-annexcity.png" alt="Annex City Limited"></div>
-        <div class="brand-logo-chip"><img src="brands/06-stepup.png" alt="StepUp"></div>
-        <div class="brand-logo-chip"><img src="brands/07-lifegoods.png" alt="LifeGoods"></div>
-        <div class="brand-logo-chip"><img src="brands/08-eduwave.png" alt="EduWave"></div>
-        <div class="brand-logo-chip"><img src="brands/09-bdkik.png" alt="bdkik"></div>
-        <div class="brand-logo-chip"><img src="brands/10-arshi.png" alt="ARSHI Kid's World"></div>
-        <div class="brand-logo-chip"><img src="brands/11-sobpaoajay.png" alt="Sobpaoajay"></div>
-        <div class="brand-logo-chip"><img src="brands/12-mangowear.png" alt="Mango Wear"></div>
-        <div class="brand-logo-chip"><img src="brands/13-cockpit.png" alt="Cockpit Aviation Hub"></div>
-        <div class="brand-logo-chip"><img src="brands/14-virtumark.png" alt="VirtuMark"></div>
-        <div class="brand-logo-chip"><img src="brands/01-stylesop.png" alt="Style Shop"></div>
-        <div class="brand-logo-chip"><img src="brands/02-ucc.png" alt="UCC"></div>
-        <div class="brand-logo-chip"><img src="brands/03-sopodon.png" alt="Sopodon Academic & Admission Program"></div>
-        <div class="brand-logo-chip"><img src="brands/04-mediinn.png" alt="Medi Inn"></div>
-        <div class="brand-logo-chip"><img src="brands/05-annexcity.png" alt="Annex City Limited"></div>
-        <div class="brand-logo-chip"><img src="brands/06-stepup.png" alt="StepUp"></div>
-        <div class="brand-logo-chip"><img src="brands/07-lifegoods.png" alt="LifeGoods"></div>
-        <div class="brand-logo-chip"><img src="brands/08-eduwave.png" alt="EduWave"></div>
-        <div class="brand-logo-chip"><img src="brands/09-bdkik.png" alt="bdkik"></div>
-        <div class="brand-logo-chip"><img src="brands/10-arshi.png" alt="ARSHI Kid's World"></div>
-        <div class="brand-logo-chip"><img src="brands/11-sobpaoajay.png" alt="Sobpaoajay"></div>
-        <div class="brand-logo-chip"><img src="brands/12-mangowear.png" alt="Mango Wear"></div>
-        <div class="brand-logo-chip"><img src="brands/13-cockpit.png" alt="Cockpit Aviation Hub"></div>
-        <div class="brand-logo-chip"><img src="brands/14-virtumark.png" alt="VirtuMark"></div>
-      </div>
-    </div>
-    <div style="max-width: 1180px; margin: 0 auto; padding: 14px 56px 8px;">
-      <p style="font-size: 12.5px; color: #6E6960; margin: 0;">+ several more brands and businesses I've handled campaigns, pages &amp; growth for.</p>
-    </div>
-
     <!-- STATS STRIP -->
     <div class="stats-strip" style="max-width: 1180px; margin: 0 auto; padding: 0 56px 72px;">
       <div style="padding-right: 20px;">
@@ -190,6 +149,48 @@
         <div style="font-family: 'Space Grotesk', sans-serif; font-size: 34px; font-weight: 700; color: #FAF7F2;">৳82,00,000+</div>
         <div style="font-size: 13px; color: #8A847B; margin-top: 6px;">Total Revenue Collected</div>
       </div>
+    </div>
+  </div>
+
+  <!-- WORKED WITH -->
+  <div style="width: 100%; background: #FAF7F2; box-sizing: border-box; padding: 56px 0 48px; border-bottom: 1px solid #E7E0D6;">
+    <div style="max-width: 1180px; margin: 0 auto; padding: 0 56px 26px;">
+      <div style="font-family: 'Space Grotesk', sans-serif; font-size: 42px; font-weight: 700; color: #231F1C;">Worked with</div>
+    </div>
+    <div class="brand-marquee-wrap">
+      <div class="brand-marquee-track">
+        <div class="brand-logo-chip"><img src="brands/01-stylesop.png" alt="Style Shop"></div>
+        <div class="brand-logo-chip"><img src="brands/02-ucc.png" alt="UCC"></div>
+        <div class="brand-logo-chip"><img src="brands/03-sopodon.png" alt="Sopodon Academic & Admission Program"></div>
+        <div class="brand-logo-chip"><img src="brands/04-mediinn.png" alt="Medi Inn"></div>
+        <div class="brand-logo-chip"><img src="brands/05-annexcity.png" alt="Annex City Limited"></div>
+        <div class="brand-logo-chip"><img src="brands/06-stepup.png" alt="StepUp"></div>
+        <div class="brand-logo-chip"><img src="brands/07-lifegoods.jpg" alt="LifeGoods"></div>
+        <div class="brand-logo-chip"><img src="brands/08-eduwave.jpg" alt="EduWave"></div>
+        <div class="brand-logo-chip"><img src="brands/09-bdkik.png" alt="bdkik"></div>
+        <div class="brand-logo-chip"><img src="brands/10-arshi.png" alt="ARSHI Kid's World"></div>
+        <div class="brand-logo-chip"><img src="brands/11-sobpaoajay.png" alt="Sobpaoajay"></div>
+        <div class="brand-logo-chip"><img src="brands/12-mangowear.png" alt="Mango Wear"></div>
+        <div class="brand-logo-chip"><img src="brands/13-cockpit.png" alt="Cockpit Aviation Hub"></div>
+        <div class="brand-logo-chip"><img src="brands/14-virtumark.jpg" alt="VirtuMark"></div>
+        <div class="brand-logo-chip"><img src="brands/01-stylesop.png" alt="Style Shop"></div>
+        <div class="brand-logo-chip"><img src="brands/02-ucc.png" alt="UCC"></div>
+        <div class="brand-logo-chip"><img src="brands/03-sopodon.png" alt="Sopodon Academic & Admission Program"></div>
+        <div class="brand-logo-chip"><img src="brands/04-mediinn.png" alt="Medi Inn"></div>
+        <div class="brand-logo-chip"><img src="brands/05-annexcity.png" alt="Annex City Limited"></div>
+        <div class="brand-logo-chip"><img src="brands/06-stepup.png" alt="StepUp"></div>
+        <div class="brand-logo-chip"><img src="brands/07-lifegoods.jpg" alt="LifeGoods"></div>
+        <div class="brand-logo-chip"><img src="brands/08-eduwave.jpg" alt="EduWave"></div>
+        <div class="brand-logo-chip"><img src="brands/09-bdkik.png" alt="bdkik"></div>
+        <div class="brand-logo-chip"><img src="brands/10-arshi.png" alt="ARSHI Kid's World"></div>
+        <div class="brand-logo-chip"><img src="brands/11-sobpaoajay.png" alt="Sobpaoajay"></div>
+        <div class="brand-logo-chip"><img src="brands/12-mangowear.png" alt="Mango Wear"></div>
+        <div class="brand-logo-chip"><img src="brands/13-cockpit.png" alt="Cockpit Aviation Hub"></div>
+        <div class="brand-logo-chip"><img src="brands/14-virtumark.jpg" alt="VirtuMark"></div>
+      </div>
+    </div>
+    <div style="max-width: 1180px; margin: 0 auto; padding: 18px 56px 0;">
+      <p style="font-size: 13px; color: #8A847B; margin: 0;">+ several more brands and businesses I've handled campaigns, pages &amp; growth for.</p>
     </div>
   </div>
 
