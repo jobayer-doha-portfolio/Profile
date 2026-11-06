@@ -32,6 +32,35 @@
   .hero-row { display: flex; gap: 64px; align-items: flex-start; flex-wrap: wrap; }
   .timeline-item { display: grid; grid-template-columns: 180px 28px 1fr; gap: 0; }
 
+  .brand-marquee-wrap {
+    width: 100%;
+    overflow: hidden;
+    -webkit-mask-image: linear-gradient(to right, transparent 0, #000 64px, #000 calc(100% - 64px), transparent 100%);
+    mask-image: linear-gradient(to right, transparent 0, #000 64px, #000 calc(100% - 64px), transparent 100%);
+  }
+  .brand-marquee-track {
+    display: flex;
+    align-items: center;
+    gap: 52px;
+    width: max-content;
+    animation: brand-marquee-scroll 30s linear infinite;
+  }
+  .brand-marquee-wrap:hover .brand-marquee-track { animation-play-state: paused; }
+  @keyframes brand-marquee-scroll {
+    from { transform: translateX(0); }
+    to { transform: translateX(-50%); }
+  }
+  .brand-logo-chip { height: 36px; display: flex; align-items: center; flex: 0 0 auto; }
+  .brand-logo-chip img {
+    height: 100%;
+    width: auto;
+    object-fit: contain;
+    filter: drop-shadow(0 1px 3px rgba(0,0,0,0.5));
+    opacity: 0.88;
+    transition: opacity 0.2s ease, transform 0.2s ease;
+  }
+  .brand-logo-chip img:hover { opacity: 1; transform: scale(1.06); }
+
   @media (max-width: 860px) {
     .stats-strip { grid-template-columns: repeat(2, minmax(0, 1fr)); }
     .stats-strip > div:nth-child(2) { border-left: 1px solid rgba(250,247,242,0.18); }
@@ -42,6 +71,8 @@
     .hero-row { flex-direction: column; align-items: center; text-align: center; }
     .timeline-item { grid-template-columns: 24px 1fr; }
     .timeline-date { display: none; }
+    .brand-logo-chip { height: 28px; }
+    .brand-marquee-track { gap: 36px; }
   }
 </style>
 </head>
@@ -95,6 +126,50 @@
           <img src="photo.png" alt="Portrait of Ahmmed Jobayer Doha" style="position: relative; width: 100%; height: 100%; object-fit: cover; border-radius: 28px; border: 6px solid #1C1B19; box-shadow: 0 24px 48px rgba(0,0,0,0.35);">
         </div>
       </div>
+    </div>
+
+    <div style="max-width: 1180px; margin: 0 auto; padding: 0 56px 28px;">
+      <div style="font-family: 'Space Grotesk', sans-serif; font-size: 36px; font-weight: 700; color: #FAF7F2;">Highlight</div>
+    </div>
+
+    <!-- WORKED WITH -->
+    <div style="max-width: 1180px; margin: 0 auto; padding: 0 56px 18px;">
+      <div style="font-family: 'Space Grotesk', sans-serif; font-size: 20px; font-weight: 700; color: #FAF7F2;">Worked with</div>
+    </div>
+    <div class="brand-marquee-wrap">
+      <div class="brand-marquee-track">
+        <div class="brand-logo-chip"><img src="brands/01-stylesop.png" alt="Style Shop"></div>
+        <div class="brand-logo-chip"><img src="brands/02-ucc.png" alt="UCC"></div>
+        <div class="brand-logo-chip"><img src="brands/03-sopodon.png" alt="Sopodon Academic & Admission Program"></div>
+        <div class="brand-logo-chip"><img src="brands/04-mediinn.png" alt="Medi Inn"></div>
+        <div class="brand-logo-chip"><img src="brands/05-annexcity.png" alt="Annex City Limited"></div>
+        <div class="brand-logo-chip"><img src="brands/06-stepup.png" alt="StepUp"></div>
+        <div class="brand-logo-chip"><img src="brands/07-lifegoods.png" alt="LifeGoods"></div>
+        <div class="brand-logo-chip"><img src="brands/08-eduwave.png" alt="EduWave"></div>
+        <div class="brand-logo-chip"><img src="brands/09-bdkik.png" alt="bdkik"></div>
+        <div class="brand-logo-chip"><img src="brands/10-arshi.png" alt="ARSHI Kid's World"></div>
+        <div class="brand-logo-chip"><img src="brands/11-sobpaoajay.png" alt="Sobpaoajay"></div>
+        <div class="brand-logo-chip"><img src="brands/12-mangowear.png" alt="Mango Wear"></div>
+        <div class="brand-logo-chip"><img src="brands/13-cockpit.png" alt="Cockpit Aviation Hub"></div>
+        <div class="brand-logo-chip"><img src="brands/14-virtumark.png" alt="VirtuMark"></div>
+        <div class="brand-logo-chip"><img src="brands/01-stylesop.png" alt="Style Shop"></div>
+        <div class="brand-logo-chip"><img src="brands/02-ucc.png" alt="UCC"></div>
+        <div class="brand-logo-chip"><img src="brands/03-sopodon.png" alt="Sopodon Academic & Admission Program"></div>
+        <div class="brand-logo-chip"><img src="brands/04-mediinn.png" alt="Medi Inn"></div>
+        <div class="brand-logo-chip"><img src="brands/05-annexcity.png" alt="Annex City Limited"></div>
+        <div class="brand-logo-chip"><img src="brands/06-stepup.png" alt="StepUp"></div>
+        <div class="brand-logo-chip"><img src="brands/07-lifegoods.png" alt="LifeGoods"></div>
+        <div class="brand-logo-chip"><img src="brands/08-eduwave.png" alt="EduWave"></div>
+        <div class="brand-logo-chip"><img src="brands/09-bdkik.png" alt="bdkik"></div>
+        <div class="brand-logo-chip"><img src="brands/10-arshi.png" alt="ARSHI Kid's World"></div>
+        <div class="brand-logo-chip"><img src="brands/11-sobpaoajay.png" alt="Sobpaoajay"></div>
+        <div class="brand-logo-chip"><img src="brands/12-mangowear.png" alt="Mango Wear"></div>
+        <div class="brand-logo-chip"><img src="brands/13-cockpit.png" alt="Cockpit Aviation Hub"></div>
+        <div class="brand-logo-chip"><img src="brands/14-virtumark.png" alt="VirtuMark"></div>
+      </div>
+    </div>
+    <div style="max-width: 1180px; margin: 0 auto; padding: 14px 56px 8px;">
+      <p style="font-size: 12.5px; color: #6E6960; margin: 0;">+ several more brands and businesses I've handled campaigns, pages &amp; growth for.</p>
     </div>
 
     <!-- STATS STRIP -->
@@ -201,7 +276,7 @@
         <div style="background: #FAF7F2; border-radius: 12px; padding: 18px 20px; font-size: 15px; font-weight: 600;">Meta Pixel Setup &amp; Conversion API</div>
         <div style="background: #FAF7F2; border-radius: 12px; padding: 18px 20px; font-size: 15px; font-weight: 600;">AI Tools Using</div>
         <div style="background: #FAF7F2; border-radius: 12px; padding: 18px 20px; font-size: 15px; font-weight: 600;">Keyword Research (Basic)</div>
-        <div style="background: #FAF7F2; border-radius: 12px; padding: 18px 20px; font-size: 15px; font-weight: 600;">Google Business Manager (Map)</div>
+        <div style="background: #FAF7F2; border-radius: 12px; padding: 18px 20px; font-size: 15px; font-weight: 600;">Server Side Tracking</div>
       </div>
     </div>
   </div>
